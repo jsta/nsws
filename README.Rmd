@@ -44,10 +44,13 @@ nsws_west_get(version = "1")
 ```
 
 ```{r eval=TRUE}
-# Load data
+# Load data from cache
 dt <- nsws_load("1")
 
 # View tables
 names(dt)
 tibble::as.tibble(dt$bathym)
+
+# Load archived package data
+# data(nsws)
 ```

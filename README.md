@@ -32,7 +32,7 @@ nsws_west_get(version = "1")
 ```
 
 ``` r
-# Load data
+# Load data from cache
 dt <- nsws_load("1")
 
 # View tables
@@ -55,4 +55,7 @@ tibble::as.tibble(dt$bathym)
 #> 10    9.3 1A1-044 44.0417    773.5 -74.3666   13.7     3.3   63.5 1626.9
 #> # ... with 119 more rows, and 5 more variables: SHORLN <dbl>,
 #> #   SHRDEV <dbl>, VOLDV <dbl>, VOLUME <dbl>, WAREA <dbl>
+
+# Load archived package data
+# data(nsws)
 ```
