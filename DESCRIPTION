@@ -1,0 +1,10 @@
+Package: nsws
+Title: National Surface Water Survey
+Version: 0.1
+Authors@R: person("Joseph", "Stachelek", comment = c(ORCID = "0000-0002-5924-2464"), role = c("aut", "cre"), email = "stachel2@msu.edu")
+Description: Serve the National Surface Water Survey as a data package.
+Depends: R (>= 3.4.3)
+License: GPL
+Encoding: UTF-8
+LazyData: true
+RoxygenNote: 6.0.1
