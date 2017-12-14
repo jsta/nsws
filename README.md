@@ -2,6 +2,8 @@
 National Surface Water Survey Package
 =====================================
 
+[![lifecycle](https://img.shields.io/badge/lifecycle-stable-brightgreen.svg)](https://img.shields.io/badge/lifecycle-stable-brightgreen.svg) [![CRAN status](http://www.r-pkg.org/badges/version/nsws)](https://cran.r-project.org/package=nsws)
+
 Metadata
 --------
 
