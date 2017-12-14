@@ -1,6 +1,6 @@
 cache_path <- function() paste0(rappdirs::user_data_dir(
-                appname   = "externalrdata",
-                appauthor = "externalrdata"), .Platform$file.sep)
+                appname   = "nsws",
+                appauthor = "nsws"), .Platform$file.sep)
 
 get_if_not_exists <- function(url, destfile){
   if(!file.exists(destfile)){
