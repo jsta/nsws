@@ -5,7 +5,7 @@
 #' @importFrom rappdirs user_data_dir
 #' @importFrom utils download.file
 #' @importFrom xml2 read_html
-#' @importFrom rvest html_attr html_text
+#' @importFrom rvest html_attr html_text html_nodes
 #' @param version_id version id
 #' @param skip numeric vector of lines to skip on file read. optional.
 #' @param dest_folder file.path optional will default to the location returned by \code{\link[rappdirs]{user_data_dir}}.
