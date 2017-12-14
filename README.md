@@ -2,7 +2,7 @@
 National Surface Water Survey Package
 =====================================
 
-[![lifecycle](https://img.shields.io/badge/lifecycle-stable-brightgreen.svg)](https://img.shields.io/badge/lifecycle-stable-brightgreen.svg) [![CRAN status](http://www.r-pkg.org/badges/version/nsws)](https://cran.r-project.org/package=nsws)
+[![lifecycle](https://img.shields.io/badge/lifecycle-stable-brightgreen.svg)](https://img.shields.io/badge/lifecycle-stable-brightgreen.svg) [![CRAN status](http://www.r-pkg.org/badges/version/nsws)](https://cran.r-project.org/package=nsws) [![DOI](https://zenodo.org/badge/114264836.svg)](https://zenodo.org/badge/latestdoi/114264836)
 
 Metadata
 --------
