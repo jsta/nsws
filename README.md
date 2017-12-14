@@ -9,6 +9,10 @@ Metadata
 
 See the [eastern](https://archive.epa.gov/emap/archive-emap/web/html/els.html) and [western](https://archive.epa.gov/emap/archive-emap/web/html/wls.html) survey pages.
 
+See
+
+> Landers, D.H., Overton, W.S., Linthurst, R.A. and Brakke, D.F., 1988. Eastern Lake Survey, regional estimates of lake chemistry. Environmental science & technology, 22(2), pp.128-135.
+
 Installation
 ------------
 
