@@ -1,4 +1,4 @@
-#' temp_ls
+#' nsws_ls
 #'
 #' @param version_id character version id
 #' @param ... extra arguments passed to list.files
@@ -6,14 +6,14 @@
 #' @export
 #'
 #' @examples \dontrun{
-#' temp_ls("1")
+#' nsws_ls("1")
 #' }
-temp_ls <- function(version_id, ...){
+nsws_ls <- function(version_id, ...){
   list.files(paste0(cache_path(), version_id),
              pattern = "\\.csv$", ...)
 }
 
-#'@name temp_ingest
+#'@name nsws_ingest
 #'@title Ingest flat files
 #'@description Ingest data from component flat files
 #'@param version_id character temp database version string
@@ -22,13 +22,13 @@ temp_ls <- function(version_id, ...){
 #'@importFrom utils read.csv
 #'@importFrom purrr map_df
 #'@examples \dontrun{
-#'temp_ingest("1")
+#'nsws_ingest("1")
 #'}
 #'
-temp_ingest <- function(version_id, folder = NA, skip = NA){
+nsws_ingest <- function(version_id, folder = NA, skip = NA){
 
   # Set-up paths ####
-  flist <- temp_ls(version_id = version_id,
+  flist <- nsws_ls(version_id = version_id,
                    full.names = TRUE, include.dirs = TRUE)
 
   # Read data ####

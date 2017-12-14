@@ -11,13 +11,13 @@
 #'@examples \dontrun{
 #' temp_compile("1", format = "rds")
 #' }
-temp_compile <- function(version_id, format = "rds", folder = NA, skip = NA){
+nsws_compile <- function(version_id, format = "rds", folder = NA, skip = NA){
 
   if(is.na(folder)){
     folder <- cache_path()
   }
 
-  res <- temp_ingest(version_id = version_id, folder = folder, skip = skip)
+  res <- nsws_ingest(version_id = version_id, folder = folder, skip = skip)
 
   # dir.exists(cache_path())
   dir.create(cache_path(), recursive = TRUE, showWarnings = FALSE)
