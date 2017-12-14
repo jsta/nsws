@@ -18,6 +18,33 @@ knitr::opts_chunk$set(
 
 National Surface Water Survey
 
-https://archive.epa.gov/emap/archive-emap/web/html/els.html
+See the [eastern](https://archive.epa.gov/emap/archive-emap/web/html/els.html) and [western](https://archive.epa.gov/emap/archive-emap/web/html/wls.html) survey pages.
 
-https://archive.epa.gov/emap/archive-emap/web/html/wls.html
+## Installation
+
+```{r eval=FALSE}
+# install development version from Github
+# install devtools if not found - install.packages("devtools")
+devtools::install_github("jsta/nsws", update_dependencies = TRUE)
+```
+
+## Usage
+
+```{r eval=TRUE}
+library(nsws)
+```
+
+```{r eval=FALSE}
+# Download raw data
+nsws_east_get(version = "1")
+nsws_west_get(version = "1")
+```
+
+```{r eval=TRUE}
+# Load data
+dt <- nsws_load("1")
+
+# View tables
+names(dt)
+tibble::as.tibble(dt$bathym)
+```

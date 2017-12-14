@@ -11,7 +11,7 @@
 #' @param dest_folder file.path optional will default to the location returned by \code{\link[rappdirs]{user_data_dir}}.
 #' @param compile logical perform on-the-fly compilation to rds?
 #' @examples \dontrun{
-#' nsws_east_get(version = "1", compile = FALSE)
+#' nsws_east_get(version = "1")
 #' }
 nsws_east_get <- function(version_id, skip = NA, dest_folder = NA, compile = TRUE){
 
@@ -38,7 +38,7 @@ nsws_east_get <- function(version_id, skip = NA, dest_folder = NA, compile = TRU
     ))
 
   if(compile){
-    temp_compile(version_id = version_id, skip = skip)
+    nsws_compile(version_id = version_id, skip = skip)
   }
 }
 
@@ -53,7 +53,7 @@ nsws_east_get <- function(version_id, skip = NA, dest_folder = NA, compile = TRU
 #' @inheritParams nsws_east_get
 #' @param compile logical perform on-the-fly compilation to rds?
 #' @examples \dontrun{
-#' nsws_west_get(version = "1", compile = FALSE)
+#' nsws_west_get(version = "1")
 #' }
 nsws_west_get <- function(version_id, skip = NA, dest_folder = NA, compile = TRUE){
 
@@ -80,6 +80,6 @@ nsws_west_get <- function(version_id, skip = NA, dest_folder = NA, compile = TRU
     ))
 
   if(compile){
-    temp_compile(version_id = version_id, skip = skip)
+    nsws_compile(version_id = version_id, skip = skip)
   }
 }

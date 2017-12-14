@@ -1,4 +1,4 @@
-#'@name temp_compile
+#'@name nsws_compile
 #'@title Compile data to R data (rds) object
 #'@export
 #'@description Compile data from component flat files
@@ -9,7 +9,7 @@
 #'@importFrom utils read.table
 #'@importFrom rappdirs user_data_dir
 #'@examples \dontrun{
-#' temp_compile("1", format = "rds")
+#' nsws_compile("1", format = "rds")
 #' }
 nsws_compile <- function(version_id, format = "rds", folder = NA, skip = NA){
 

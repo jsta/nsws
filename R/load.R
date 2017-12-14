@@ -1,4 +1,4 @@
-#' temp_load
+#' nsws_load
 #' @description Load files from local file system
 #' @param version_id character database version string
 #' @param format character choice of rds or sqlite
@@ -7,10 +7,9 @@
 #' @importFrom rappdirs user_data_dir
 #' @importFrom dplyr src_sqlite
 #' @examples \dontrun{
-#' dt  <- temp_load("1")
-#' dt2 <- temp_load("2")
+#' dt <- nsws_load("1")
 #' }
-temp_load <- function(version_id, format = "rds", fpath = NA){
+nsws_load <- function(version_id, format = "rds", fpath = NA){
 
   if(!is.na(fpath)){
 

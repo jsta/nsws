@@ -20,6 +20,6 @@ Retrieves external files and store in file cache.
 }
 \examples{
 \dontrun{
-nsws_west_get(version = "1", compile = FALSE)
+nsws_west_get(version = "1")
 }
 }
