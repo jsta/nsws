@@ -42,10 +42,18 @@ devtools::install_github("jsta/nsws", update_dependencies = TRUE)
 library(nsws)
 ```
 
+### Load archived package data
+```{r }
+data(nsws)
+names(nsws) # the entire western lake survey is in the wlsds4 table
+```
+
+### Build package data
 ```{r eval=FALSE}
 # Download raw data
+
 nsws_east_get(version = "1")
-nsws_west_get(version = "1")
+nsws_west_get(version = "1") # Data from both surveys are "compiled" here
 ```
 
 ```{r eval=TRUE}
@@ -55,7 +63,4 @@ dt <- nsws_load("1")
 # View tables
 names(dt)
 tibble::as.tibble(dt$bathym)
-
-# Load archived package data
-# data(nsws)
 ```
